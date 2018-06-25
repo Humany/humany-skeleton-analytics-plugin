@@ -1,0 +1,21 @@
+{
+  "version": "v1",
+  "packages": {
+    "@humany/widget-plugins": {
+      "signature": "d0df9cc64dcb34305f90ca10a78694a3",
+      "file": true
+    },
+    "@humany/widget-chat": {
+      "signature": "850a525bd4efa70568c068f779f8a5dc",
+      "file": true
+    },
+    "@humany/resource-loader": {
+      "signature": "d5cb0448724f5b9e73baaf70e13d439a",
+      "file": true
+    },
+    "@humany/widget-routing": {
+      "signature": "a4b6e42b301932baa127e3c9e0ce391d",
+      "file": true
+    }
+  }
+}
