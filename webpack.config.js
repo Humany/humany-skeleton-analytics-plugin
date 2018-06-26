@@ -1,4 +1,11 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const WEBPROVISIONS = true;
+
+const template = WEBPROVISIONS 
+  ? __dirname + '/public/index_wprov.html' 
+  : __dirname + '/public/index.html';
 
 module.exports = {
   entry: [
@@ -12,7 +19,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + '/public/index.html',
+      template,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.webprovisions': true,
     }),
   ],
   devtool: 'source-map',

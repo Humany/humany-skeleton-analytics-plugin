@@ -1,4 +1,3 @@
-// export default {
-//   implementationName: 'wprov',
-//   widgetName: 'wprovfloating',
-// };
+export default {
+  webprovisionsEnabled: process.env.webprovisions,
+};

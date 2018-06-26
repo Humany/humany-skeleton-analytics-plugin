@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Analytics Plugin</title>
+    <title>Analytics Plugin Legacy</title>
+
     <!-- Start Humany - implementation: "webprovisions" [webprovisions] -->
     <script>
       (function(n,t,i,r,u,f,e){for(var o,s=/[?&]{1}(humany[^=]*)=([^&#]*)/g;o=s.exec(n.location.search);)i+=(i.indexOf("?")>-1?"&":"?")+o[1]+"="+o[2];
@@ -13,7 +14,6 @@
       (window,document,"//demobolaget.humany.local/webprovisions/embed.js","Humany","script");
     </script>
     <!-- End Humany -->
-
 </head>
 
 <body>
@@ -25,53 +25,53 @@
 
       <div>
         <h2>openWidget({ location })</h2>
-        <label for="input-open-widget-location">Location</label>
-        <input type="text" id="input-open-widget-location" />
+        <label for="input-openWidget-location">Location</label>
+        <input type="text" id="input-openWidget-location" />
       </div>
   
       <div>
         <h2>openGuide({ guide, categories, location })</h2>
-        <label for="input-open-guide-guide">Guide</label>
-        <input type="text" id="input-open-guide-guide" />
+        <label for="input-openGuide-guide">Guide</label>
+        <input type="text" id="input-openGuide-guide" />
   
-        <label for="input-open-guide-categories">Categories</label>
-        <input type="text" id="input-open-guide-categories" />
+        <label for="input-openGuide-categories">Categories</label>
+        <input type="text" id="input-openGuide-categories" />
   
-        <label for="input-open-guide-location">Location</label>
-        <input type="text" id="input-open-guide-location" />
+        <label for="input-openGuide-location">Location</label>
+        <input type="text" id="input-openGuide-location" />
       </div>
   
       <div>
         <h2>giveGuideFeedback({ guide, categories, feedbackType, location })</h2>
-        <label for="input-give-guide-feedback-guide">Guide</label>
-        <input type="text" id="input-give-guide-feedback-guide" />
+        <label for="input-giveGuideFeedback-guide">Guide</label>
+        <input type="text" id="input-giveGuideFeedback-guide" />
   
-        <label for="input-give-guide-feedback-categories">Categories</label>
-        <input type="text" id="input-give-guide-feedback-categories" />
+        <label for="input-giveGuideFeedback-categories">Categories</label>
+        <input type="text" id="input-giveGuideFeedback-categories" />
   
-        <label for="input-give-guide-feedback-feedback-type">Feedback Type</label>
-        <input type="text" id="input-give-guide-feedback-feedback-type" />
+        <label for="input-giveGuideFeedback-feedback-type">Feedback Type</label>
+        <input type="text" id="input-giveGuideFeedback-feedbackType" />
   
-        <label for="input-give-guide-feedback-location">Location</label>
-        <input type="text" id="input-give-guide-feedback-location" />
+        <label for="input-giveGuideFeedback-location">Location</label>
+        <input type="text" id="input-giveGuideFeedback-location" />
       </div>
   
       <div>
         <h2>contactMethodEnter({ contactMethod, location })</h2>
-        <label for="input-contact-method-enter-contact-method">ContactMethod</label>
-        <input type="text" id="input-contact-method-enter-contact-method" />
+        <label for="input-contactMethodEnter-contactMethod">ContactMethod</label>
+        <input type="text" id="input-contactMethodEnter-contactMethod" />
   
-        <label for="input-contact-method-enter-location">Location</label>
-        <input type="text" id="input-contact-method-enter-location" />
+        <label for="input-contactMethodEnter-location">Location</label>
+        <input type="text" id="input-contactMethodEnter-location" />
       </div>
   
       <div>
         <h2>contactMethodComplete({ contactMethod, location })</h2>
-        <label for="input-contact-method-complete-contact-method">ContactMethod</label>
-        <input type="text" id="input-contact-method-complete-contact-method" />
+        <label for="input-contactMethodComplete-contactMethod">ContactMethod</label>
+        <input type="text" id="input-contactMethodComplete-contactMethod" />
   
-        <label for="input-contact-method-complete-location">Location</label>
-        <input type="text" id="input-contact-method-complete-location" />
+        <label for="input-contactMethodComplete-location">Location</label>
+        <input type="text" id="input-contactMethodComplete-location" />
       </div>
   
       <div>
@@ -81,6 +81,9 @@
   
         <label for="input-search-hits">Hits</label>
         <input type="text" id="input-search-hits" />
+
+        <label for="input-search-hits">Total Hits</label>
+        <input type="text" id="input-search-totalHits" />
   
         <label for="input-search-location">Location</label>
         <input type="text" id="input-search-location" />
@@ -88,14 +91,14 @@
   
       <div>
         <h2>searchResultClick({ position, guide, location })</h2>
-        <label for="input-search-result-click-position">Position</label>
-        <input type="text" id="input-search-result-click-position" />
+        <label for="input-searchResultClick-position">Position</label>
+        <input type="text" id="input-searchResultClick-position" />
   
-        <label for="input-search-result-click-guide">Guide</label>
-        <input type="text" id="input-search-result-click-guide" />
+        <label for="input-searchResultClick-guide">Guide</label>
+        <input type="text" id="input-searchResultClick-guide" />
   
-        <label for="input-search-result-click-location">Location</label>
-        <input type="text" id="input-search-result-click-location" />
+        <label for="input-searchResultClick-location">Location</label>
+        <input type="text" id="input-searchResultClick-location" />
       </div>
   
       <div>
