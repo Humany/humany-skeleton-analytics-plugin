@@ -44,7 +44,7 @@ if (clearButton) {
   });
 }
 
-const callbackMap = {
+const callbacks = {
   ReadGuide: (args) => eventCallbacks.openGuide(args),
   WidgetOpen: (args) => eventCallbacks.openWidget(args),
   Search: (args) => eventCallbacks.search(args),
@@ -61,7 +61,7 @@ if (MODE === 'WEBPROVISIONS') {
       action: ({ type, args, location })  => {
         console.log('ACTION DISPATCHED', type, args, location);
 
-        const invokable = callbackMap[type];
+        const invokable = callbacks[type];
 
         if (typeof invokable === 'function') {
           invokable(args);
@@ -76,7 +76,18 @@ if (MODE === 'WEBPROVISIONS') {
   /* Legacy */
   humany.configure(config => {
     const analyticsPluginSettings = {
-      eventCallbacks,
+      action: ({ type, args, location })  => {
+        console.log('ACTION DISPATCHED', type, args, location);
+
+        const invokable = callbacks[type];
+
+        if (typeof invokable === 'function') {
+          invokable(args);
+        }
+      },
+      navigate: ({ type, args }) => {
+        console.log('NAVIGATE DISPATCHED', type, args, location);
+      },
     };
 
     const legacyAnalyticsPlugin = new LegacyAnalyticsPlugin(analyticsPluginSettings);

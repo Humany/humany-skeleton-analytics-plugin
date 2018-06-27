@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const WEBPROVISIONS = true;
+const WEBPROVISIONS = false;
 
 const template = WEBPROVISIONS 
   ? __dirname + '/public/index_wprov.html' 
@@ -22,7 +22,7 @@ module.exports = {
       template,
     }),
     new webpack.DefinePlugin({
-      'process.env.webprovisions': true,
+      'process.env.webprovisions': WEBPROVISIONS,
     }),
   ],
   devtool: 'source-map',
