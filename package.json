@@ -4,17 +4,18 @@
   "description": "Humany Skeleton Analytics Plugin",
   "main": "dist/index.js",
   "scripts": {
+    "start-dev-legacy": "npm run build-dev-legacy && node ./src/server/server.js",
     "start-dev": "npm run build-dev && node ./src/server/server.js",
-    "build": ".\\node_modules\\.bin\\webpack --mode production",
-    "build-dev": ".\\node_modules\\.bin\\webpack --mode development"
+    "build": ".\\node_modules\\.bin\\webpack --mode production --env.webprovisions=true",
+    "build-dev": ".\\node_modules\\.bin\\webpack --mode development --env.webprovisions=true",
+    "build-legacy": ".\\node_modules\\.bin\\webpack --mode production",
+    "build-dev-legacy": ".\\node_modules\\.bin\\webpack --mode development"
   },
   "dependencies": {
     "@humany/resource-loader": "file:.yalc/@humany/resource-loader",
-    "@humany/widget-chat": "file:.yalc/@humany/widget-chat",
     "@humany/widget-plugins": "file:.yalc/@humany/widget-plugins",
-    "@humany/widget-routing": "file:.yalc/@humany/widget-routing",
     "@humany/widget-tracking": "file:.yalc/@humany/widget-tracking",
-    "@webprovisions/platform": "^1.0.0-alpha.16",
+    "@webprovisions/platform": "^1.0.0-alpha.17",
     "babel-regenerator-runtime": "^6.5.0",
     "express": "^4.16.2",
     "react": "15.6.1"

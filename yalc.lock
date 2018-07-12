@@ -2,23 +2,15 @@
   "version": "v1",
   "packages": {
     "@humany/widget-plugins": {
-      "signature": "d8ddc41a2b5984ba6cb9d06167fb7052",
-      "file": true
-    },
-    "@humany/widget-chat": {
-      "signature": "58e1ada70c788a811ecda9bcfc472c69",
+      "signature": "ffd4cb982a71819ce4423227cee4ca23",
       "file": true
     },
     "@humany/resource-loader": {
-      "signature": "11423a6b0bc3d9cb32f3b2864617dbb8",
-      "file": true
-    },
-    "@humany/widget-routing": {
-      "signature": "4063b861b350c41997cb3396f47ed38b",
+      "signature": "66c195c62a0d56cc371d4e76608ae408",
       "file": true
     },
     "@humany/widget-tracking": {
-      "signature": "11077308000e66f5143a5553eb934775",
+      "signature": "a777d9c9dde420ee8d9c25038f1ecfb2",
       "file": true
     }
   }

@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Analytics Plugin Legacy</title>
+    <title>Analytics Plugin with Webprovisions</title>
 
-    <!-- Start Humany - implementation: "webprovisions" [webprovisions] -->
     <script>
-      (function(n,t,i,r,u,f,e){for(var o,s=/[?&]{1}(humany[^=]*)=([^&#]*)/g;o=s.exec(n.location.search);)i+=(i.indexOf("?")>-1?"&":"?")+o[1]+"="+o[2];
-      f=t.createElement(u);f.async=!0;f.src=i;e=t.getElementsByTagName(u)[0];e.parentNode.insertBefore(f,e);n[r]=n[r]||{_c:[],configure:function(){n[r]._c.push(arguments)}}})
-      (window,document,"//demobolaget.humany.local/webprovisions/embed.js","Humany","script");
+        (function(n,t,i,r,u,f,e){for(var o,s=/[?&]{1}(humany[^=]*)=([^&#]*)/g;o=s.exec(n.location.search);)i+=(i.indexOf("?")>-1?"&":"?")+o[1]+"="+o[2];
+        f=t.createElement(u);f.async=!0;f.src=i;e=t.getElementsByTagName(u)[0];e.parentNode.insertBefore(f,e);n[r]=n[r]||{_c:[],configure:function(){n[r]._c.push(arguments)}}})
+        (window,document,"//webprovisions-labs.humany.cc/webprovisions/embed.js","Humany","script");
     </script>
-    <!-- End Humany -->
 </head>
 
 <body>
     <div>
-      <a href="//demobolaget.humany.local/no-webprov">Customer service</a>
+      <a href="//webprovisions-labs.humany.cc/plugin-floating">Customer service</a>
     </div>
 
     <div id="output">

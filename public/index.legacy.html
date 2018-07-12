@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analytics Plugin Legacy</title>
+
+    <script>
+      (function(n,t,i,r,u,f,e){for(var o,s=/[?&]{1}(humany[^=]*)=([^&#]*)/g;o=s.exec(n.location.search);)i+=(i.indexOf("?")>-1?"&":"?")+o[1]+"="+o[2];
+      f=t.createElement(u);f.async=!0;f.src=i;e=t.getElementsByTagName(u)[0];e.parentNode.insertBefore(f,e);n[r]=n[r]||{_c:[],configure:function(){n[r]._c.push(arguments)}}})
+      (window,document,"//webprovisions-labs.humany.cc/default/embed.js","Humany","script");
+    </script>
+</head>
+
+<body>
+    <div>
+      <a href="//webprovisions-labs.humany.cc/plugin-floating">Customer service</a>
+    </div>
+
+    <div id="output">
+
+      <div>
+        <h2>openWidget({ location })</h2>
+        <label for="input-openWidget-location">Location</label>
+        <input type="text" id="input-openWidget-location" />
+      </div>
+  
+      <div>
+        <h2>openGuide({ guide, categories, location })</h2>
+        <label for="input-openGuide-guide">Guide</label>
+        <input type="text" id="input-openGuide-guide" />
+  
+        <label for="input-openGuide-categories">Categories</label>
+        <input type="text" id="input-openGuide-categories" />
+  
+        <label for="input-openGuide-location">Location</label>
+        <input type="text" id="input-openGuide-location" />
+      </div>
+  
+      <div>
+        <h2>giveGuideFeedback({ guide, categories, feedbackType, location })</h2>
+        <label for="input-giveGuideFeedback-guide">Guide</label>
+        <input type="text" id="input-giveGuideFeedback-guide" />
+  
+        <label for="input-giveGuideFeedback-categories">Categories</label>
+        <input type="text" id="input-giveGuideFeedback-categories" />
+  
+        <label for="input-giveGuideFeedback-feedback-type">Feedback Type</label>
+        <input type="text" id="input-giveGuideFeedback-feedbackType" />
+  
+        <label for="input-giveGuideFeedback-location">Location</label>
+        <input type="text" id="input-giveGuideFeedback-location" />
+      </div>
+  
+      <div>
+        <h2>contactMethodEnter({ contactMethod, location })</h2>
+        <label for="input-contactMethodEnter-contactMethod">ContactMethod</label>
+        <input type="text" id="input-contactMethodEnter-contactMethod" />
+  
+        <label for="input-contactMethodEnter-location">Location</label>
+        <input type="text" id="input-contactMethodEnter-location" />
+      </div>
+  
+      <div>
+        <h2>contactMethodComplete({ contactMethod, location })</h2>
+        <label for="input-contactMethodComplete-contactMethod">ContactMethod</label>
+        <input type="text" id="input-contactMethodComplete-contactMethod" />
+  
+        <label for="input-contactMethodComplete-location">Location</label>
+        <input type="text" id="input-contactMethodComplete-location" />
+      </div>
+  
+      <div>
+        <h2>search({ phrase, hits, location })</h2>
+        <label for="input-search-phrase">Phrase</label>
+        <input type="text" id="input-search-phrase" />
+  
+        <label for="input-search-hits">Hits</label>
+        <input type="text" id="input-search-hits" />
+
+        <label for="input-search-hits">Total Hits</label>
+        <input type="text" id="input-search-totalHits" />
+  
+        <label for="input-search-location">Location</label>
+        <input type="text" id="input-search-location" />
+      </div>
+  
+      <div>
+        <h2>searchResultClick({ position, guide, location })</h2>
+        <label for="input-searchResultClick-position">Position</label>
+        <input type="text" id="input-searchResultClick-position" />
+  
+        <label for="input-searchResultClick-guide">Guide</label>
+        <input type="text" id="input-searchResultClick-guide" />
+  
+        <label for="input-searchResultClick-location">Location</label>
+        <input type="text" id="input-searchResultClick-location" />
+      </div>
+  
+      <div>
+        <button type="button" id="clear-button">Clear</button>
+      </div>
+    </div>
+
+    <!-- This script is injected by HTMLWebpackPlugin when built and saved in the dist directory -->
+    <!-- <script src="/analytics-skeleton-plugin.js"></script> -->
+</body>
+
+</html>
