@@ -12,8 +12,7 @@
     "build-dev-legacy": ".\\node_modules\\.bin\\webpack --mode development"
   },
   "dependencies": {
-    "@humany/resource-loader": "file:.yalc/@humany/resource-loader",
-    "@humany/widget-plugins": "file:.yalc/@humany/widget-plugins",
+    "@humany/resource-loader": "^1.0.0-alpha.2",
     "@humany/widget-tracking": "file:.yalc/@humany/widget-tracking",
     "@webprovisions/platform": "^1.0.0-alpha.17",
     "babel-regenerator-runtime": "^6.5.0",

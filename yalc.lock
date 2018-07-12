@@ -1,14 +1,6 @@
 {
   "version": "v1",
   "packages": {
-    "@humany/widget-plugins": {
-      "signature": "ffd4cb982a71819ce4423227cee4ca23",
-      "file": true
-    },
-    "@humany/resource-loader": {
-      "signature": "66c195c62a0d56cc371d4e76608ae408",
-      "file": true
-    },
     "@humany/widget-tracking": {
       "signature": "a777d9c9dde420ee8d9c25038f1ecfb2",
       "file": true
