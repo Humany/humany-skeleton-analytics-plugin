@@ -21,6 +21,9 @@ module.exports = env => {
       path: __dirname + '/dist',
       
     },
+    optimization:{
+      minimize: true,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template,
