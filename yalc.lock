@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@humany/widget-tracking": {
-      "signature": "0e22bf49ea8a0f4b732f2b6f6764774e",
-      "file": true
-    }
-  }
-}
