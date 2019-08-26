@@ -11,9 +11,9 @@
   <script>
     (function (n, t, i, r, u, f, e) {
       for (var o, s = /[?&]{1}(humany[^=]*)=([^&#]*)/g; o = s.exec(n.location.search);)i += (i.indexOf("?") > -1 ? "&" : "?") + o[1] + "=" + o[2];
-      f = t.createElement(u); f.async = !0; f.src = i; e = t.getElementsByTagName(u)[0]; e.parentNode.insertBefore(f, e); n[r] = n[r] || { _c: [], configure: function () { n[r]._c.push(arguments) } }
+      f = t.createElement(u); f.async = !0; f.src = i; e = t.getElementsByTagName(u)[0]; e.parentNode.insertBefore(f, e); n[r] = n[r] || { _c: [], configure: function (t) { n[r]._c.push(arguments) } }
     })
-      (window, document, "//webprovisions-labs.humany.cc/webprovisions/embed.js", "Humany", "script");
+      (window, document, "//webprovisions-labs.humany.net/skeleton-plugin/embed.js", "Humany", "script");
   </script>
   <!-- End Humany -->
 
@@ -24,7 +24,7 @@
 
 <body>
   <div>
-    <a href="//webprovisions-labs.humany.cc/plugin-bot">Customer service</a>
+    <a href="//webprovisions-labs.humany.net/skeleton-plugin-bot">Customer service</a>
   </div>
 
   <!-- This script is injected by HTMLWebpackPlugin when built and saved in the dist directory -->
