@@ -13,8 +13,9 @@
   },
   "dependencies": {
     "@humany/resource-loader": "^1.0.0-alpha.2",
-    "@webprovisions/platform": "^1.0.0-alpha.17",
+    "@humany/widget-analytics": "^1.0.0-beta.44",
     "@humany/widget-tracking": "^1.0.1",
+    "@webprovisions/platform": "^1.0.0-alpha.17",
     "babel-regenerator-runtime": "^6.5.0",
     "express": "^4.16.2",
     "react": "15.6.1"
