@@ -19,7 +19,6 @@ module.exports = env => {
     output: {
       filename: 'analytics-skeleton-plugin.js',
       path: __dirname + '/dist',
-      
     },
     optimization:{
       minimize: true,
