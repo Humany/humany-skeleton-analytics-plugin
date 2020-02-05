@@ -1,55 +1,79 @@
 const webpack = require('webpack');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = env => {
-  // If webprovisions should be enabled or not
-  const WEBPROVISIONS = env && env.webprovisions || false;
+module.exports = (function () {
+  const config = {};
 
-  const entryFile = WEBPROVISIONS ? 'index.js' : 'index.legacy.js';
+  config.mode = 'development'
 
-  const template = WEBPROVISIONS 
-    ? __dirname + '/public/index.html' 
-    : __dirname + '/public/index.legacy.html';
+  config.entry = [__dirname + '/src/polyfills.js', __dirname + '/src/index.js'];
 
-  return {
-    entry: [
-      __dirname + '/src/polyfills.js',
-      __dirname + '/src/' + entryFile,
-    ],
-    output: {
-      filename: 'analytics-skeleton-plugin.js',
-      path: __dirname + '/dist',
-    },
-    optimization:{
-      minimize: true,
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template,
-      }),
-      new webpack.DefinePlugin({
-        'process.env.webprovisions': WEBPROVISIONS,
-      }),
-    ],
-    devtool: 'source-map',
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /(node_modules)/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: [
-                ['@babel/preset-env', { modules: false }]
-              ],
-              plugins: [
-                "@babel/plugin-proposal-class-properties"
-              ]
-            }
-          }
-        }
-      ]
-    }
+  config.output = {
+    filename: 'humany.js',
+    chunkFilename: 'humany-[name].js',
+    path: __dirname + '/dist',
   };
-}
+
+  config.plugins = [
+    new HtmlWebpackPlugin({
+      template: __dirname + '/public/index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'humany.css',
+      chunkFilename: 'humany-[name].css',
+    }),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1,
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+  ];
+
+  config.module = {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env', { modules: false }]],
+            plugins: [
+              'babel-plugin-syntax-dynamic-import',
+              'babel-plugin-transform-class-properties',
+              'babel-plugin-transform-async-to-generator',
+            ],
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              precision: 8,
+            },
+          },
+        ],
+      },
+    ],
+  };
+
+  return config;
+})();

@@ -1,27 +1,32 @@
-const express = require('express');
-const path = require('path');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
 const opn = require('opn');
+const openport = require('openport');
+const serverConfig = require('./server.config');
+const webpackConfig = require('../../webpack.config.js');
 
-const app = express();
+openport.find(
+  {
+    startingPort: 3000,
+    endingPort: 3100,
+  },
+  function (err, port) {
+    if (err) {
+      console.log(err);
+      return;
+    } else {
+      const url = `http://localhost:${port}/`;
 
-// Port to listen on
-const port = process.env.PORT || 3000;
+      webpackConfig.entry.unshift(
+        `webpack-dev-server/client?${url}`,
+        'webpack/hot/dev-server',
+      );
+      const compiler = webpack(webpackConfig);
+      const server = new WebpackDevServer(compiler, serverConfig);
 
-// Serve static files
-app.use(express.static(path.resolve('dist')));
+      server.listen(port);
 
-// Route
-app.get('/', (req, res) => {
-
-    res.sendFile(path.resolve('dist/index.html'));
-});
-
-// Serve app
-app.listen(port, () => {
-
-    console.log(`App listening on port ${port}`);
-
-    // Open browser
-    opn(`http://localhost:${port}`);
-});
-
+      opn(url);
+    }
+  },
+);
