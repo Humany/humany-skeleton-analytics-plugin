@@ -754,43 +754,43 @@
   resolved "https://registry.yarnpkg.com/@humany/utils/-/utils-2.0.0-beta.7.tgz#f45a81f3cae451c64fbf323555e3feb307c9dc34"
   integrity sha512-yTvvi3/aY4XPLiRIG/JmvX0jtW+9BYjP63Wx4ckUiQLwrs2HmFWOsprW01+x27g2Yl11L7q1Tlptk2pKQWo0HQ==
 
-"@humany/widget-analytics@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@humany/widget-analytics/-/widget-analytics-2.0.0-beta.12.tgz#76e040468d13821a19657e4a5822fa3c19122aa5"
-  integrity sha512-GvNefFTuk6mEpPn8j2KvaXHC+YfwWPr3Pmrj/nhBeD754GcoS+ToyqOIRtz3O3in/7R4W7fhXXl8lfTU8IX5hg==
+"@humany/widget-analytics@2.0.0-beta.14":
+  version "2.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@humany/widget-analytics/-/widget-analytics-2.0.0-beta.14.tgz#55f7940cf132cc49eac0c6f0678c87b5d5be04e3"
+  integrity sha512-h8Sms2XqCvRfQnWej1fntbsbdFuJqjnAlxJWqq2rS7cTu3AqFap9oJc4uH1bxax3zoESqcn0sXpy+ij6UqlhAg==
   dependencies:
     "@humany/utils" "^2.0.0-beta.7"
-    "@humany/widget-core" "^2.0.0-beta.12"
-    "@humany/widget-tracking" "^2.0.0-beta.12"
+    "@humany/widget-core" "^2.0.0-beta.13"
+    "@humany/widget-tracking" "^2.0.0-beta.14"
     "@webprovisions/platform" "^1.1.0"
 
-"@humany/widget-core@^2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@humany/widget-core/-/widget-core-2.0.0-beta.12.tgz#03cb33126a578c6c6cc754ecf308b077a05b2f1d"
-  integrity sha512-uTYX7oKxq6VHsn/1TmBsxR4IMYsVBAmdiB+2CizxWAru6mnNrsOnnV1jfhys2lgZ9bO3sZpe2BC/q+vY6GBtjw==
+"@humany/widget-core@^2.0.0-beta.13":
+  version "2.0.0-beta.13"
+  resolved "https://registry.yarnpkg.com/@humany/widget-core/-/widget-core-2.0.0-beta.13.tgz#a05b25a9db8e73dd1dae09653447b098f72dac02"
+  integrity sha512-A2cgNuEitrm42WMwSYidb3Yqqbj61RbMApTbeHsueNFkJZyZzgIGa7cFO9N5by2Clmp0p0sJgafOkqfrmd/1mg==
   dependencies:
     "@humany/utils" "^2.0.0-beta.7"
     "@webprovisions/bootstrapping" "^1.0.10"
     "@webprovisions/platform" "^1.1.0"
 
-"@humany/widget-routing@^2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@humany/widget-routing/-/widget-routing-2.0.0-beta.12.tgz#fb0351b538fe3265a8ea62901464af4a55ae09c6"
-  integrity sha512-0LJ+IK6jfrekFfMiDwrq4c1L47tUEjdx5frjA+njb5UYWA/WmZUdZjiriHVsxORobqdyyVmqLzd0FkJqfCSq+Q==
+"@humany/widget-routing@^2.0.0-beta.13":
+  version "2.0.0-beta.13"
+  resolved "https://registry.yarnpkg.com/@humany/widget-routing/-/widget-routing-2.0.0-beta.13.tgz#2dce92e87ba7a3ebdb43aca1fe9f01b8253ed901"
+  integrity sha512-y4/QQ6NQdaaFmJ+UgOjltnN5HGxiLL8kmqv6RXphl+vwPh9829AkDNCKfpUs2NwcewlKdvPQkBJTVLfDszeiHg==
   dependencies:
     "@humany/utils" "^2.0.0-beta.7"
-    "@humany/widget-core" "^2.0.0-beta.12"
+    "@humany/widget-core" "^2.0.0-beta.13"
     "@webprovisions/platform" "^1.1.0"
     history "4.7.2"
 
-"@humany/widget-tracking@2.0.0-beta.12", "@humany/widget-tracking@^2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@humany/widget-tracking/-/widget-tracking-2.0.0-beta.12.tgz#616a6c310c8f50b5c50a487cc38702dbd365eb53"
-  integrity sha512-ARccex7wCDvYwK6OXFz9ZIZvjcxS5ARZJGMiUHHxvKHVcPTdMacsIZ11H8s2jjlXv3K3MQf/gtVufHO2ZW2LHA==
+"@humany/widget-tracking@2.0.0-beta.14", "@humany/widget-tracking@^2.0.0-beta.14":
+  version "2.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@humany/widget-tracking/-/widget-tracking-2.0.0-beta.14.tgz#9a0a479be3e4b45acbdd22c86ccc801f32930cdb"
+  integrity sha512-Bv8T8p3xPsJhy1ZYc9b9AIPmA+2pb38RzvFHy+gBnkCut07RSsZ07Gb5Ii5UtgF6qGlW0rgZ+Ifxu/jAhTeWig==
   dependencies:
     "@humany/serviceclient" "^1.0.28"
-    "@humany/widget-core" "^2.0.0-beta.12"
-    "@humany/widget-routing" "^2.0.0-beta.12"
+    "@humany/widget-core" "^2.0.0-beta.13"
+    "@humany/widget-routing" "^2.0.0-beta.13"
     "@webprovisions/platform" "^1.1.0"
 
 "@types/anymatch@*":

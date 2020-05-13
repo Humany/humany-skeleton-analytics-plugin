@@ -9,8 +9,8 @@
     "build-dev": ".\\node_modules\\.bin\\webpack --mode development"
   },
   "dependencies": {
-    "@humany/widget-analytics": "2.0.0-beta.12",
-    "@humany/widget-tracking": "2.0.0-beta.12",
+    "@humany/widget-analytics": "2.0.0-beta.14",
+    "@humany/widget-tracking": "2.0.0-beta.14",
     "babel-regenerator-runtime": "^6.5.0"
   },
   "devDependencies": {
